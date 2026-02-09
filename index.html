@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi primera web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 id="title">La verdad es... yo soy Iron Man.</h1>
+    <p>Interacción + tema + saludo</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Contador</h2>
+      <button id="btn" class="btn">Haz clic</button>
+      <button id="reset" class="btn btn-secondary">Reset</button>
+      <p id="msg" class="msg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Tema</h2>
+      <button id="theme" class="btn">Cambiar tema</button>
+      <p class="msg">Prueba: cambia a claro a oscuro y al revez</p>
+    </section>
+
+    <section class="card">
+  <h2>Mini-juego: Adivina el número</h2>
+  <p>Estoy pensando un número entre <b>1</b> y <b>100</b> ¿cuál es?</p>
+
+  <input id="guess" class="input" type="number" min="1" max="100" placeholder="Tu número..." />
+  <button id="guessBtn" class="btn">Probar</button>
+  <button id="newGame" class="btn btn-secondary">Nuevo juego</button>
+
+  <p id="hint" class="msg"></p>
+  <p id="tries" class="msg"></p>
+</section>
+
+
+    <section class="card">
+      <h2>Saludo</h2>
+      <input id="name" class="input" placeholder="Escribe tu nombre..." />
+      <button id="hello" class="btn">Saludar</button>
+      <p id="helloMsg" class="msg"></p>
+    </section>
+    <section class="card">
+  <h2>Simon Dice 🧠⚡</h2>
+  <p>Repite la secuencia de colores. Cada nivel añade uno más.</p>
+
+  <div class="simon-top">
+    <button id="simonStart" class="btn">Empezar</button>
+    <button id="simonStrict" class="btn btn-secondary">Strict: OFF</button>
+  </div>
+
+  <div class="simon-grid" aria-label="Tablero Simon">
+    <button class="pad pad-1" data-pad="0" aria-label="Pad 1"></button>
+    <button class="pad pad-2" data-pad="1" aria-label="Pad 2"></button>
+    <button class="pad pad-3" data-pad="2" aria-label="Pad 3"></button>
+    <button class="pad pad-4" data-pad="3" aria-label="Pad 4"></button>
+  </div>
+
+  <p id="simonStatus" class="msg"></p>
+  <p id="simonLevel" class="msg"></p>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <small>Hecho por mí, el Manu, disfrutalo</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
